@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>InfoBici</title>
+        <link rel="icon" href="img/Logo.png" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style_stopwatch.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylec.css">
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+     
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <header class="d-flex align-items-center justify-content-center justify-content-md-around py-0 mb-4 border-bottom">
+                    <div class="col-md-3 mb-2 mb-md-0">
+                        <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                            <img src="img/Logo.png" alt="Logo" class="logo" />
+                        </a>
+                    </div>
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="index.html" class="nav-link px-2">Inicio</a></li>
+                        <li><a href="marcas.html" class="nav-link px-2">Marcas</a></li>
+                        <li><a href="relaciones.html" class="nav-link px-2">Relaciones</a></li>
+                        <li><a href="calculomarco.html" class="nav-link px-2">Calcula tu Marco</a></li>
+                        <li><a href="cronometro.html" class="nav-link px-2">Cronometro</a></li>
+                        <li><a href="temporizador.html" class="nav-link px-2">Temporizador</a></li>
+                        <li><a href="about.html" class="nav-link px-2">About</a></li>
+                        <li><a href="login.html" class="nav-link px-2">login</a></li>
+                        <li><a href="Register.html" class="nav-link px-2">Register</a></li>
+                    </ul>
+
+                    <ul class="nav">
+                        <li class="ms-3">
+                            <a href="https://www.Youtube.com/"><img class="Logosredes" src="img/Youtube.png" alt="Youtube" /></a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="https://www.Twitter.com/"><img class="Logosredes" src="img/Twitter.png" alt="Twitter" /></a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="https://www.Instagram.com/"><img class="Logosredes" src="img/Instagram.png" alt="Instagram" /></a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="https://www.facebook.com/"><img class="Logosredes" src="img/Facebook.png" alt="Facebook" /></a>
+                        </li>
+                    </ul>
+                </header>
+            </div>
+        </header>
+        <main>
+            <section id="DATOS">
+                <div class="cuadro-datos">
+                        <h3 style="text-align: center;">DATOS PERSONALES</h3>
+                        <form class="needs-validation" novalidate="">
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label for="firstName" class="form-label">Nombres</label>
+                              <input type="text" class="form-control" id="firstName" placeholder="Ingresa tus nombres" value="" required="">
+                              <div class="invalid-feedback">
+                                Se requiere ingresar el nombre.
+                              </div>
+                            </div>
+                
+                            <div class="col-sm-6">
+                              <label for="lastName" class="form-label">Apellidos</label>
+                              <input type="text" class="form-control" id="lastName" placeholder="Ingresa tus apellidos" value="" required="">
+                              <div class="invalid-feedback">
+                                Se requiere ingresar el apellido.
+                              </div>
+                            </div>
+        
+                            <div class="col-12">
+                              <label for="username" class="form-label">ID</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text">                    
+                                  <div >
+                                  <select class="form-select" id="country1" required="">
+                                    <option value="">ID</option>
+                                    <option>CC</option>
+                                    <option>TI</option>
+                                    <option>CE</option>
+                                    <option>NIP</option>
+                                    <option>PS</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Selecciona un pais.
+                                  </div>
+                                </div></span>
+                                <input type="text" class="form-control" id="" placeholder="Ingresa tu numero de documento" required="">
+                              <div class="invalid-feedback">
+                                  Es necesario tu numero de documento.
+                                </div>
+                              </div>
+                            </div>   
+        
+                            <div class="col-12">
+                              <label for="username" class="form-label">Usuario</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="" placeholder="Digita tu Usuario" required="">
+                              <div class="invalid-feedback">
+                                  Tu nombre de usuario es requerido.
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="col-12">
+                              <label for="email" class="form-label">Correo electronico <span class="form-label1">(Opcional)</span></label>
+                              <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electronico.">
+                              <div class="invalid-feedback">
+                                Por favor ingresa un email adecuado.
+                              </div>
+                            </div>
+                
+                            <div class="col-12">
+                              <label for="address" class="form-label">Dirección</label>
+                              <input type="text" class="form-control" id="address" placeholder="Calle/Carrera/diagonal-#" required="">
+                              <div class="invalid-feedback">
+                               Por favor ingresa una direccion.
+                              </div>
+                            </div>
+                
+                            <div class="col-12">
+                              <label for="address2" class="form-label">Complemento de Dirección <span class="form-label1">(Optional)</span></label>
+                              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                            </div>
+                
+                
+                            <div class="col-md-5"><br>
+                              <label for="country" class="form-label">Pais</label>
+                              <select class="form-select" id="country" required="">
+                                <option value="">Elije...</option>
+                                <option>Colombia</option>
+                                <option>Brazil</option>
+                                <option>Canada</option>
+                                <option>Suiza</option>
+                                <option>cundinamarca</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Please select a valid country.
+                              </div>
+                            </div>
+                
+                            <div class="col-md-5"><br>
+                              <label for="country" class="form-label">Municipio</label>
+                              <select class="form-select" id="country" required="">
+                                <option value="">Elije...</option>
+                                <option>Bogotá</option>
+                                <option>Soacha</option>
+                                <option>Villavicencio</option>
+                                <option>Cali</option>
+                                <option>cundinamarca</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Please select a valid country.
+                              </div>
+                            </div>
+                            </div>
+                
+                          <hr class="my-4">
+                          <hr class="my-4">
+                          <hr class="my-4">
+                
+                          <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar Datos</button><br><br>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                                <img src="img/Logo.png" alt="logo" class="logo" />
+                            </a>
+                            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Company, Inc</span>
+                        </div>
+                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                            <li class="ms-3">
+                                <a href="https://www.Youtube.com/"><img class="Logosredes" src="img/Youtube.png" alt="Youtube" /></a>
+                            </li>
+                            <li class="ms-3">
+                                <a href="https://www.Twitter.com/"><img class="Logosredes" src="img/Twitter.png" alt="Twitter" /></a>
+                            </li>
+                            <li class="ms-3">
+                                <a href="https://www.Instagram.com/"><img class="Logosredes" src="img/Instagram.png" alt="Instagram" /></a>
+                            </li>
+                            <li class="ms-3">
+                                <a href="https://www.facebook.com/"><img class="Logosredes" src="img/Facebook.png" alt="Facebook" /></a>
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </footer>
+            <script src="js/script_cronometro.js"></script>
+           </main>
+    </body>
+</html>
